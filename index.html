@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messismo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="body">
+    <div id="Conteiner">
+        <!-- HEADER -->
+        <header>
+            <div id="Mainbar">
+                <a href="https://www.themessistore.com/" target="_blank">
+                    <img class="LetraInicial" id="LogoMessiS" src="LogoM.png" alt="MessiStore">
+                </a>
+                <a href="https://www.themessistore.com/es/collections/shop-all" target="_blank"
+                    class="LetraInicial">Tienda</a>
+                <a href="https://messi.com/palmares/" target="_blank" class="LetraInicial">Trofeos</a>
+                <a href="https://www.themessistore.com/es/pages/contact-us" target="_blank"
+                    class="LetraInicial">Contacto</a>
+            </div>
+        </header>
+        <main>
+            <div id="Containermain">
+                <!-- MAIN iZQUIERDA -->
+                <div id="Izquierda">
+                    <div id="VerticalList">
+                        <div class="DivsList">
+                            <h2 class="IzquierdaLet">24/06/1987 (35 años)</h2>
+                        </div>
+                        <div class="DivsList">
+                            <h2 class="IzquierdaLet">Argentino <img id="BanderaA"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png" />
+                            </h2>
+                        </div>
+                        <div class="DivsList">
+                            <h2 class="IzquierdaLet">67kg</h2>
+                        </div>
+                        <div class="DivsList">
+                            <h2 class="IzquierdaLet">Paris Saint-Germain <img id="PSG"
+                                    src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/49.png" />
+                            </h2>
+                        </div>
+                        <div class="DivsList">
+                            <h2 class="IzquierdaLet">1.70 cm</h2>
+                        </div>
+                        <div class="DivsList">
+                            <h2 class="IzquierdaLet">Dorsal 30</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN CENTRO -->
+                <div id="Centro">
+                    <div id="Izq">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <img src="Messipng.png" alt="Messi1" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="LM2.png" alt="Messi2" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="LM3.png" alt="Messi3" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="LM4.png" alt="Messi4" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="LM5.png" alt="Messi5" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="LM6.png" alt="Messi6" style="width:100%">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <script>
+                            let slideIndex = 0;
+                            showSlides();
+
+                            function showSlides() {
+                                let i;
+                                let slides = document.getElementsByClassName("mySlides");
+                                let dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) { slideIndex = 1 }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " active";
+                                setTimeout(showSlides, 6000); // Change image every 6 seconds
+                            }
+                        </script>
+                    </div>
+
+                </div>
+                <!-- MAIN DERECHA -->
+                <div id="RightSide">
+                    <div class="wrapper">
+                        <div class="menu">
+
+                            <div id="Indicaciones">¡DA CLICK EN LAS COMPETENCIAS!</div>
+                            <div id="contenedormenu">
+                                <div id="lc" onclick="myFunction('champions')" class="opcionTabla">UEFA Champions League
+                                </div>
+                                <div id="lcn" onclick="myFunction('InfoBoxCopas')" class="opcionTabla">Copas Nacionales
+                                </div>
+                                <div id="lafa" onclick="myFunction('InfoBoxSeleccion')" class="opcionTabla"
+                                    value="InfoBoxSeleccion">AFA Seleccion mayor</div>
+                                <div id="ll" onclick="myFunction('InfoBoxlligas')" class="opcionTabla"
+                                    value="InfoBoxlligas">Ligas</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div id="champions" class="tablas">
+                                <table class="content-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Temporada</th>
+                                            <th>Club</th>
+                                            <th>Goles ⚽</th>
+                                            <th>Asitencias 👟</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>22/23</td>
+                                            <td><img class="Equipos" src="PSG.png"></td>
+                                            <td>2 ⚽</td>
+                                            <td>1 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21/22</td>
+                                            <td><img class="Equipos" src="PSG.png"></td>
+                                            <td>5 ⚽</td>
+                                            <td>0 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20/21</td>
+                                            <td><img class="Equipos" src="FCB.png"></td>
+                                            <td>5 ⚽</td>
+                                            <td>2 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19/20</td>
+                                            <td><img class="Equipos" src="FCB.png"></td>
+                                            <td>3 ⚽</td>
+                                            <td>4 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18/19</td>
+                                            <td><img class="Equipos" src="FCB.png"></td>
+                                            <td>12 ⚽</td>
+                                            <td>3 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/18</td>
+                                            <td><img class="Equipos" src="FCB.png"></td>
+                                            <td>6 ⚽</td>
+                                            <td>2 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16/17</td>
+                                            <td><img class="Equipos" src="FCB.png"></td>
+                                            <td>11 ⚽</td>
+                                            <td>2 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/16</td>
+                                            <td><img class="Equipos" src="FCB.png"></td>
+                                            <td>6 ⚽</td>
+                                            <td>1 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14/15</td>
+                                            <td><img class="Equipos" src="FCB.png"></td>
+                                            <td>10 ⚽</td>
+                                            <td>6 👟</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="InfoBoxlligas" class="tablas">
+                                <table class="content-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Temporada</th>
+                                            <th>Club</th>
+                                            <th>Goles ⚽</th>
+                                            <th>Asitencias 👟</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>22/23</td>
+                                            <td><img class="Equipos" src="L1.png"></td>
+                                            <td>7 ⚽</td>
+                                            <td>10 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21/22</td>
+                                            <td><img class="Equipos" src="L1.png"></td>
+                                            <td>6 ⚽</td>
+                                            <td>15 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20/21</td>
+                                            <td><img class="Equipos" src="LL1.png"></td>
+                                            <td>30 ⚽</td>
+                                            <td>11 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19/20</td>
+                                            <td><img class="Equipos" src="LL1.png"></td>
+                                            <td>25 ⚽</td>
+                                            <td>22 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18/19</td>
+                                            <td><img class="Equipos" src="LL1.png"></td>
+                                            <td>36 ⚽</td>
+                                            <td>14 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/18</td>
+                                            <td><img class="Equipos" src="LL1.png"></td>
+                                            <td>34 ⚽</td>
+                                            <td>14 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16/17</td>
+                                            <td><img class="Equipos" src="LL1.png"></td>
+                                            <td>37 ⚽</td>
+                                            <td>12 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/16</td>
+                                            <td><img class="Equipos" src="LL1.png"></td>
+                                            <td>26 ⚽</td>
+                                            <td>16 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14/15</td>
+                                            <td><img class="Equipos" src="LL1.png"></td>
+                                            <td>43 ⚽</td>
+                                            <td>21 👟</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="InfoBoxSeleccion" class="tablas">
+                                <table class="content-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Temporada</th>
+                                            <th>Club</th>
+                                            <th>Goles ⚽</th>
+                                            <th>Asitencias 👟</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>22/23</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>7 ⚽</td>
+                                            <td>1 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21/22</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>10 ⚽</td>
+                                            <td>2 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20/21</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>6 ⚽</td>
+                                            <td>5 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19/20</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>2 ⚽</td>
+                                            <td>1 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18/19</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>3 ⚽</td>
+                                            <td>1 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/18</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>7 ⚽</td>
+                                            <td>3 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16/17</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>3 ⚽</td>
+                                            <td>2 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/16</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>9 ⚽</td>
+                                            <td>4 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14/15</td>
+                                            <td><img class="Sele" src="AFA.png"></td>
+                                            <td>4 ⚽</td>
+                                            <td>5 👟</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="InfoBoxCopas" class="tablas">
+                                <table class="content-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Temporada</th>
+                                            <th>Club</th>
+                                            <th>Goles ⚽</th>
+                                            <th>Asitencias 👟</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>22/23</td>
+                                            <td><img class="Equipos" src="CDLL.png"></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21/22</td>
+                                            <td><img class="Equipos" src="CDF.png"></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20/21</td>
+                                            <td><img class="Equipos" src="CDR.png"></td>
+                                            <td>3 ⚽</td>
+                                            <td>1 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19/20</td>
+                                            <td><img class="Equipos" src="CDR.png"></td>
+                                            <td>2 ⚽</td>
+                                            <td>1 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18/19</td>
+                                            <td><img class="Equipos" src="CDR.png"></td>
+                                            <td>3 ⚽</td>
+                                            <td>3 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17/18</td>
+                                            <td><img class="Equipos" src="CDR.png"></td>
+                                            <td>4 ⚽</td>
+                                            <td>4 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16/17</td>
+                                            <td><img class="Equipos" src="CDR.png"></td>
+                                            <td>5 ⚽</td>
+                                            <td>4 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15/16</td>
+                                            <td><img class="Equipos" src="CDR.png"></td>
+                                            <td>5 ⚽</td>
+                                            <td>6 👟</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14/15</td>
+                                            <td><img class="Equipos" src="CDR.png"></td>
+                                            <td>5 ⚽</td>
+                                            <td>4 👟</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <!-- INICIO FOOTER -->
+            <div class="footer">
+                <div class="contain">
+                    <div class="info">
+                        <h1>Messismo™</h1>
+                        <ul>
+                            <li>Sobre nosotros</li>
+                            <li>Nuestro objetivo</li>
+                            <li>Servicios</li>
+                            <li>Redes Sociales</li>
+                            <li>Contactanos</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>Productos</h1>
+                        <ul>
+                            <li>Camisas</li>
+                            <li>Zapatos</li>
+                            <li>Shorts</li>
+                            <li>Medias</li>
+                            <li>Accesorios</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>Socios</h1>
+                        <ul>
+                            <li>Ozuna</li>
+                            <li>Cristiano Ronaldo</li>
+                            <li>Conaprole</li>
+                            <li>FIFA</li>
+                            <li>Universidad ORT</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>Recursos</h1>
+                        <ul>
+                            <li>E-mail</li>
+                            <li>Canjea tu codigo</li>
+                            <li>Ofertas</li>
+                            <li>Tiendas oficales</li>
+                            <li>ALBUM ozuna</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h1>Soporte</h1>
+                        <ul>
+                            <li>¡Informanos de problemas!</li>
+                            <li>Telegram</li>
+                            <li>Abre un ticket</li>
+                        </ul>
+                    </div>
+                    <div class="info social">
+                        <h1>Social</h1>
+                        <ul>
+                            <li><img src="Face.png" width="32" style="width: 32px;"></li>
+                            <li><img src="Insta.png" width="32" style="width: 32px;"></li>
+                            <li><img src="LMGIF.gif" width="32" style="width: 32px;"></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <script>
+
+                function clickTabla(idTabla) {
+                    alert("hola")
+                    document.getElementsByClass("tablas").hide()
+                    document.getElementById(idTabla).css("display", "block")
+                }
+
+            </script>
+        </footer>
+    </div>
+    <script>
+        function myFunction(nombreDelParametroQueRecibeDondeVoyAPonerElIdQueQuieroMostrar) {
+            document.getElementById('champions').style.display = "none";
+            document.getElementById('InfoBoxlligas').style.display = "none";
+            document.getElementById('InfoBoxSeleccion').style.display = "none";
+            document.getElementById('InfoBoxCopas').style.display = "none";
+            document.getElementById(nombreDelParametroQueRecibeDondeVoyAPonerElIdQueQuieroMostrar).style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

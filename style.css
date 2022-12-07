@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#body {
+  margin: 0px;
+}
+
+#Conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+#Mainbar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background: black;
+  color: white;
+  height: auto;
+}
+
+#LogoMessiS {
+  height: 100px;
+  width: 110px;
+}
+
+.LetraInicial {
+  text-transform: uppercase;
+  font-size: 35px
+}
+
+#Containermain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: grey;
+}
+
+#Centro {
+  min-width: 350px;
+  max-height: 100%;
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: 20px;
+}
+
+#FotoLM {
+
+  height: 800px;
+
+}
+
+
+#VerticalList {
+  display: block;
+  text-align: center;
+  background: black;
+
+}
+
+#BanderaA {
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+#PSG {
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.IzquierdaLet {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Roboto Slab', serif
+}
+
+.DivsList {
+  border: 5px solid gray;
+}
+
+#RightSide {
+  background: grey;
+  min-width: 350px;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 650px;
+}
+
+.Equipos {
+  height: 48px;
+  width: 48px;
+}
+
+.Equipos {
+  padding-right: 55px;
+}
+
+.Sele {
+  height: 55px;
+}
+
+/* Tabla 1 PARTE DERECHA */
+
+.content-table {
+  border-collapse: collapse;
+  margin: 5px 0;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+.tablas {
+  display: none
+}
+
+
+
+
+/* footer */
+
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer .info {
+  width: 190px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+
+.footer .info h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+  font-family: 'Roboto Slab', serif
+}
+
+.footer .info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .info ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  font-family: 'Roboto Slab', serif
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .info ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* PARTE DE LAS TABLAS */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+select {
+  width: 100%;
+  padding: 15px 50px 15px 11px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: 0 15px 15px #efefef;
+  appearance: none;
+  background: #e8eaf6 url(arrow.png) no-repeat;
+  background-position: 95% 55%;
+  background-size: 22px;
+}
+
+#Indicaciones {
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  height: 24px;
+  text-transform: uppercase;
+  font-size: larger;
+  padding: 15px;
+  font-family: 'Roboto Slab', serif
+}
+
+.opcionTabla {
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  font-family: 'Roboto Slab', serif
+}
+
+#contenedormenu {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  border-radius: 0px 0px 72px 10px;
+  background: white;
+}
